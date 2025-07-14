@@ -1,3 +1,4 @@
+import ArrowRow from "../../Components/ArrowRow";
 import BookNow from "../../Components/BookNow";
 export default function SessionCard() {
   const sessions = [
@@ -50,13 +51,16 @@ export default function SessionCard() {
 ">
             {/* Left Section */}
             <div className="w-full md:w-1/2">
-              <div className="">
+              <div>
                 <p className="text-[32px] sm:text-[48px] md:text-[64px] font-extrabold font-primary">
                   <span className="text-[var(--color-primary)]">
                     {session.sessionCount}
                   </span>{" "}
                   Session
                 </p>
+              </div>
+              <div>
+                <ArrowRow />
               </div>
               <div className="">
                 <p className="text-xl opacity-50">{session.description}</p>
