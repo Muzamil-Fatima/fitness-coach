@@ -1,5 +1,5 @@
 @import "tailwindcss";
-font-face {
+@font-face {
   font-family: "Hanson";
   src: url(".Hanson-Bold.otf") format("truetype");
   font-weight: bold;
