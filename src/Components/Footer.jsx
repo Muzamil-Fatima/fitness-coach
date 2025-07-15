@@ -1,20 +1,26 @@
+import Logo from "../images/Logo.svg";
+import faceBook from "../images/facebook.svg";
+import instagram from "../images/instagram.svg";
+import tiktok from "../images/tiktok.svg";
+import arrow from "../images/arrow-up.svg";
+import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (
-    <>
-      <footer class="font2">
-        <div>
-          <img src="images/Logo.svg" alt="Logo" />
+    <div className="font-secondary bg-[var(--color-darker)] full">
+      <footer className="w-full m-auto pt-18 px-22 ">
+        <div className="mb-8">
+          <img src={Logo} alt="Logo" />
         </div>
-        <div class="columns">
-          <div class=" col-1 flex">
-            <div class="footer-icon">
-              <ul class="social-icon flex">
+        <div className="grid-cols-5 grid gap-4">
+          <div className=" col-span-2">
+            <div>
+              <ul className="flex gap-4 mb-10">
                 <li>
                   <a
                     href="https://www.facebook.com/people/Coach-Lenka/100087953091862/?_rdr"
                     target="_blank"
                   >
-                    <img src="images/facebook.svg" alt="facebook icon" />
+                    <img src={faceBook} alt="facebook icon" className="w-10 h-10" />
                   </a>
                 </li>
                 <li>
@@ -22,66 +28,70 @@ export default function Footer() {
                     href="https://www.instagram.com/lenka_coach_dubai/"
                     target="_blank"
                   >
-                    <img src="images/instagram.svg" alt="instagram icon" />
+                    <img src={instagram} alt="instagram icon" className="w-10 h-10"/>
                   </a>
                 </li>
                 <li>
-                  <img src="images/tiktok.svg" alt="tiktok" />
+                  <img src={tiktok} alt="tiktok" className="w-10 h-10" />
                 </li>
               </ul>
             </div>
-            <p class="w6 text-lg">Subscribe to our newsletter!</p>
-            <div class="email-block">
-              <div class="email-label flex">
-                <label for="email" class="w4 text-base footer-email">
+            <p className="font-semibold text-lg m-2">Subscribe to our newsletter!</p>
+            <div className="email-block">
+              <div className="email-label flex">
+                <label htmlFor="email" className="text-base footer-email">
                   Enter Email
                 </label>
-                <img src="images/arrow-up.svg" alt="arrow-icon" class="w4" />
+                <img src={arrow} alt="arrow-icon"  />
               </div>
-              <input type="email" required />
+              <input 
+              className="bg-transparent border-b border-white text-white placeholder-white outline-none"
+              type="email" required  />
             </div>
           </div>
-          <div class="col-2">
-            <h3 class="w7 text-base">Quick links</h3>
-            <ul class="w4 text-base opacity-75">
+          <div className="text-base space-y-4">
+            <h3 className="font-bold">Quick links</h3>
+            <ul className="font-normal  opacity-75 space-y-2">
               <li>
-                <a href="index.html">Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a href="detailed.html">About Me</a>
+                <NavLink to="/about/lenka">About Me</NavLink>
               </li>
               <li>
-                <a href="services.html">Services</a>
+                <NavLink to="/services">Services</NavLink>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
           </div>
-          <div class=" col-3">
-            <h3 class="w7 text-base ">News</h3>
-            <h4 class="w4 text-base opacity-75">Fitness Blog</h4>
-            <div class="w4 text-base opacity-75">FAQ</div>
+          <div className=" text-base space-y-4 ">
+            <h3 className="font-bold">News</h3>
+            <h4 className="font-normal opacity-75">Fitness Blog</h4>
+            <div className="font-normal opacity-75">FAQ</div>
           </div>
-          <div class=" col-4">
-            <h2 class="w7 text-base">Fitness Services</h2>
-            <div class="w4 text-base opacity-75">Book a Free Consultation</div>
-            <div class="w4 text-base opacity-75">
+          <div className="text-base space-y-4">
+            <h2 className="font-bold">Fitness Services</h2>
+            <div className="font-normal opacity-75">
+              Book a Free Consultation
+            </div>
+            <div className="font-normal text-base opacity-75">
               Refer a Friend & Earn Rewards
             </div>
-            <div class="w4 text-base opacity-75">Membership & Pricing</div>
+            <div className="font-normal text-base opacity-75">Membership & Pricing</div>
           </div>
         </div>
-        <div class="col-5 flex">
-          <p class="w5 text-base">©2025 Muzamil-Fatima. All right reserved</p>
-          <ul class="flex">
-            <li class="text-base">Privacy Policy</li>
-            <li class="text-base">Legel Notice</li>
-            <li class="text-base">Cookies Policy</li>
-            <li class="text-base">Terms & Condition</li>
+        <div className="flex text-base mt-24 justify-between ">
+          <p className="font-medium">©2025 Muzamil-Fatima. All right reserved</p>
+          <ul className="flex gap-14 mb-0.5">
+            <li>Privacy Policy</li>
+            <li>Legel Notice</li>
+            <li>Cookies Policy</li>
+            <li>Terms & Condition</li>
           </ul>
         </div>
       </footer>
-    </>
+    </div>
   );
 }

@@ -7,17 +7,17 @@ export default function ArrowRow() {
         <img
           src={arrowDown}
           alt="downarrow"
-          className="mx-3.5 my-3 h-2 rotate-90"
+          className="mx-3.5 my-3 h-2 -rotate-90"
         />
         <img
           src={arrowDown}
           alt="downarrow"
-          className="mx-3.5 my-3 h-2 rotate-90"
+          className="mx-3.5 my-3 h-2 -rotate-90"
         />
         <img
           src={arrowDown}
           alt="downarrow"
-          className="mx-3.5 my-3 h-2 rotate-90"
+          className="mx-3.5 my-3 h-2 -rotate-90"
         />
       </div>
       <hr className="opacity-20 line-length w-48" />

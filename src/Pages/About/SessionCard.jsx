@@ -1,5 +1,5 @@
 import ArrowRow from "../../Components/ArrowRow";
-import BookNow from "../../Components/BookNow";
+import BookNow from "./BookNow";
 export default function SessionCard() {
   const sessions = [
     {
@@ -44,13 +44,13 @@ export default function SessionCard() {
     },
   ];
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       {sessions.map((session) => (
-        <div key={session.id} className="w-full max-w-[1512px] min-h-[300px] sm:min-h-[400px] md:min-h-[529px] border-b-2 border-dashed border-[var(--color-primary)] mx-auto px-4 hover:bg-[var(--color-darker)]">
-          <div className="flex flex-col md:flex-row w-full max-w-[1179px] mx-auto gap-6 items-center
+        <div key={session.id} className="w-full max-w-[1512px] min-h-[300px] sm:min-h-[400px] md:min-h-[529px] border-b-2 border-dashed border-[var(--color-primary)] m-auto px-4 hover:bg-[var(--color-darker)] justify-center items-center">
+          <div className="flex w-full max-w-[1179px] items-center justify-center
 ">
             {/* Left Section */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 ">
               <div>
                 <p className="text-[32px] sm:text-[48px] md:text-[64px] font-extrabold font-primary">
                   <span className="text-[var(--color-primary)]">
@@ -81,6 +81,6 @@ export default function SessionCard() {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }

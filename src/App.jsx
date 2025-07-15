@@ -6,11 +6,12 @@ import Services from "./Pages/Services/Services";
 import SessionCard from "./Pages/About/SessionCard";
 import Classes from "./Pages/About/Classes";
 import Lenka from "./Pages/About/Lenka";
+import Footer from "./Components/Footer";
 
 
 function App() {
   return (
-    <div className="bg-[var(--color-dark)] text-[var(--color-white)] min-h-screen w-screen font-primary m-0 p-0">
+    <div className="bg-[var(--color-dark)] text-[var(--color-white)] min-h-screen w-full font-primary m-0 p-0">
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
@@ -25,6 +26,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
