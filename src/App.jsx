@@ -7,7 +7,10 @@ import SessionCard from "./Pages/About/SessionCard";
 import Classes from "./Pages/About/Classes";
 import Lenka from "./Pages/About/Lenka";
 import Footer from "./Components/Footer";
-
+import Functional from "./Pages/About/Functional";
+import OnlineTraining from "./Pages/About/OnlineTraining";
+import StrengthPower from "./Pages/About/StrengthPower";
+import WeightLoss from "./Pages/About/WeightLoss";
 
 function App() {
   return (
@@ -17,9 +20,13 @@ function App() {
           <Route index element={<Home />} />
 
           <Route path="about">
-              <Route path="sessions" element={<SessionCard />} />
-              <Route path="training-classes" element={<Classes />} />
-              <Route path="lenka" element={<Lenka />} />
+            <Route path="sessions" element={<SessionCard />} />
+            <Route path="training-classes" element={<Classes />}/>
+              <Route path="training-classes/functional-training" element={<Functional />} />
+              <Route path="training-classes/online-training" element={<OnlineTraining />} />
+              <Route path="training-classes/strength-power-training" element={<StrengthPower />} />
+              <Route path="training-classes/weight-loss-training" element={<WeightLoss />} />
+            <Route path="lenka" element={<Lenka />} />
           </Route>
 
           <Route path="services" element={<Services />} />
