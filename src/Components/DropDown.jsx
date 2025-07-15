@@ -27,7 +27,7 @@ export default function DropDown() {
     };
   }, []);
   return (
-    <div className="font-medium text-xl flex gap-2">
+    <div className="font-medium text-xl flex gap-2 font-secondary">
       <div>
         <div className="dropdown w-[390px] h-[55px] rounded-xl bg-[var(--color-darker)] flex justify-between items-center px-4">
           {selected}
