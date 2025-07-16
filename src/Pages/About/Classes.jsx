@@ -12,30 +12,30 @@ export default function Classes() {
       <div className="text-[var(--color-white)] font-primary">
         <div>
           <h2 className="text-6xl">
-            Training <span className="c1">classNames</span>
+            Training <span className="text-[var(--color-primary)]">Classes</span>
           </h2>
           <ArrowRow />
         </div>
 
         <div className="flex">
-          <div>
-            <img src={women6} alt="" />
-            <NavLink to="strength-power-training">Strength Power Training</NavLink>
+          <div className="w-1/2">
+            <img src={women6} alt="" className="h-auto"/>
+            <NavLink to="strength-power-training" className="text-5xl font-primary underline font-bold">Strength Power Training</NavLink>
           </div>
-          <div>
+          <div className="w-1/2">
             <img src={women7} alt="" />
-            <NavLink to="weight-loss-training">Weight Loss</NavLink>
+            <NavLink to="weight-loss-training" className="text-5xl font-primary underline font-bold">Weight Loss</NavLink>
           </div>
         </div>
 
-        <div className="flex two-img">
-          <div>
+        <div className="flex">
+          <div className="w-1/2">
             <img src={women8} alt="" />
-            <NavLink to="functional-training">Functional Training</NavLink>
+            <NavLink to="functional-training" className="text-5xl font-primary underline font-bold">Functional Training</NavLink>
           </div>
-          <div>
+          <div className="w-1/2">
             <img src={women9} alt="" />
-            <NavLink to="online-training">Online Training</NavLink>
+            <NavLink to="online-training" className="text-5xl font-primary underline font-bold">Online Training</NavLink>
           </div>
         </div>
       </div>

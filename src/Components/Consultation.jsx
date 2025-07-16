@@ -11,12 +11,12 @@ export default function Consultation() {
             ever since the 1500s, when an unknown printer.
           </p>
           <div className="flex">
-            <button className="w-[232px] h-14 text-[var(--color-white)] p-2.5 rounded-[10px] bg-[var(--color-darker)] m-2">Email Us</button>
-            <button className="h-14 w-[195px] text-[var(--color-darker)] border-2 border-dashed border-[var(--color-white)] rounded-[10px] m-2">Call Us</button>
+            <button className="w-[232px] h-14 text-[var(--color-white)] p-2.5 rounded-[10px] bg-[var(--color-darker)] m-2 hover:bg-transparent hover:text-[var(--color-darker)] hover:border-dashed hover:border-[var(--color-white)] hover:border-2 ">Email Us</button>
+            <button className="h-14 w-[195px] text-[var(--color-darker)] border-2 border-dashed border-[var(--color-white)] rounded-[10px] m-2 hover:bg-[var(--color-darker)] hover:border-none hover:text-[var(--color-white)]">Call Us</button>
           </div>
         </div>
         <div className=" flex flex-col justify-center items-center">
-          <p className="text-[var(--color-dark)] bg-[var(--color-white)] py-1 px-2 rounded-xl mt-10 transform -translate-x-16 ">Hey, it's free for you!</p>
+          <p className="text-[var(--color-dark)] bg-[var(--color-white)] py-1 px-2 rounded-xl  transform -translate-x-16 ">Hey, it's free for you!</p>
           <img src={women5} alt="women img" className="max-h-full object-cover " />
         </div>
       </div>
