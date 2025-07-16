@@ -10,7 +10,7 @@ export default function SessionCard() {
       location: "In person (DUBAI) / Online",
       price: "AED 250",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function SessionCard() {
       location: "In person (DUBAI) / Online",
       price: "AED 1520",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export default function SessionCard() {
       location: "In person (DUBAI) / Online",
       price: "AED 2580",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. ",
     },
   ];
   return (

@@ -12,34 +12,57 @@ export default function Classes() {
       <div className="text-[var(--color-white)] font-primary">
         <div>
           <h2 className="text-6xl">
-            Training <span className="text-[var(--color-primary)]">Classes</span>
+            Training{" "}
+            <span className="text-[var(--color-primary)]">Classes</span>
           </h2>
           <ArrowRow />
         </div>
 
         <div className="flex">
           <div className="w-1/2">
-            <img src={women6} alt="" className="h-auto"/>
-            <NavLink to="strength-power-training" className="text-5xl font-primary underline font-bold">Strength Power Training</NavLink>
+            <img src={women6} alt="" className="w-[555px] h-[397px] m-4" />
+            <NavLink
+              to="strength-power-training"
+              className="text-[32px] font-[Hanson] underline font-bold m-4"
+            >
+              Strength Power <div className="ml-4">Training</div>
+            </NavLink>
           </div>
           <div className="w-1/2">
-            <img src={women7} alt="" />
-            <NavLink to="weight-loss-training" className="text-5xl font-primary underline font-bold">Weight Loss</NavLink>
+            <img src={women7} alt="" className="w-[555px] h-[397px] m-4" />
+            <NavLink
+              to="weight-loss-training"
+              className="text-[32px] font-[Hanson] underline font-bold m-4"
+            >
+              Weight Loss
+            </NavLink>
           </div>
         </div>
 
         <div className="flex">
           <div className="w-1/2">
-            <img src={women8} alt="" />
-            <NavLink to="functional-training" className="text-5xl font-primary underline font-bold">Functional Training</NavLink>
+            <img src={women8} alt="" className="w-[555px] h-[397px] m-4" />
+            <NavLink
+              to="functional-training"
+            className="text-[32px] font-[Hanson] underline font-bold m-4"
+            >
+              Functional Training
+            </NavLink>
           </div>
           <div className="w-1/2">
-            <img src={women9} alt="" />
-            <NavLink to="online-training" className="text-5xl font-primary underline font-bold">Online Training</NavLink>
+            <img src={women9} alt="" className="w-[555px] h-[397px] m-4" />
+            <NavLink
+              to="online-training"
+            className="text-[32px] font-[Hanson] underline font-bold m-4"
+            >
+              Online Training
+            </NavLink>
           </div>
         </div>
       </div>
-      <Consultation />
+      <div className="m-20">
+        <Consultation />
+      </div>
     </>
   );
 }

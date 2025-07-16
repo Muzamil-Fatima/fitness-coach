@@ -1,12 +1,24 @@
 import Consultation from "../../Components/Consultation";
-import DropDown from "../../Components/DropDown";
+import Question from "./Question";
+import MessageForm from "./MessageForm";
+import ContactForm from "./ContactForm";
 
-export default function Contact(){
-    return(
-        <>
-        <DropDown />
-        <h1>This is Contact </h1>
+export default function Contact() {
+  return (
+    <>
+      <Question />
+      <hr />
+      <div>
+        <div>
+          <ContactForm />
+        </div>
+        <div>
+          <MessageForm />
+        </div>
+      </div>
+      <div className="m-20">
         <Consultation />
-        </>
-    )
+      </div>
+    </>
+  );
 }

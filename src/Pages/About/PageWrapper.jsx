@@ -5,9 +5,12 @@ import BookNow from "./BookNow";
 
 export default function PageWrapper({title1,title2, para1, para2, para3, para4, image1, image2}) {
     return (
-      <div className="">
-      <h3 className="font-primary font-bold text-[64px] mt-12 mb-0">{title1}<div className="mt-0 text-[var(--color-primary)]">{title2}</div></h3>
+      <>
+      <div>
+      <h3 className="font-primary font-bold text-[64px] mt-12 mb-0">
+        <span className="block">{title1}</span><span className="block mt-0 text-[var(--color-primary)]">{title2}</span></h3>
       <ArrowRow />
+      </div>
       <div className="grid grid-cols-2 gap-4 mt-8 mb-12">
         <div className="">
            <div className="mb-8"><DropDown /></div> 
@@ -29,6 +32,6 @@ export default function PageWrapper({title1,title2, para1, para2, para3, para4, 
       <div className="m-20">
         <Consultation />
       </div>
-      </div>
+      </>
     );
 }
