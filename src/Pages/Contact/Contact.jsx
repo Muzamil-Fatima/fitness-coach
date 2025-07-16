@@ -8,14 +8,15 @@ export default function Contact() {
     <>
       <Question />
       <hr />
-      <div>
-        <div>
+      <div className="grid grid-cols-5" >
+        <div className="col-span-2">
           <ContactForm />
         </div>
-        <div>
+        <div className="col-span-3">
           <MessageForm />
         </div>
       </div>
+      <hr className="mt-10" />
       <div className="m-20">
         <Consultation />
       </div>

@@ -10,9 +10,17 @@
 
   --color-primary: #f15c36;
   --color-dark: #272727;
+  --color-darked: #121212;
   --color-darker: #191919;
   --color-light: #f1f1f1;
   --color-white: #ffffff;
 
+}
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
 }
 

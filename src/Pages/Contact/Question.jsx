@@ -3,7 +3,7 @@ import women4 from "../../images/women4.png";
 
 export default function Question() {
   return (
-    <>
+    <div className="font-secondary">
       <div className="con-left flex">
         <div className="flex">
           <p className="w6 font2 text-5xl ask-ques flex">
@@ -23,6 +23,6 @@ export default function Question() {
         <img src={women4} alt="women"  />
       </div>
       <hr className="dash-line"></hr>
-    </>
+    </div>
   );
 }
