@@ -1,7 +1,7 @@
 import Logo from "../images/Logo.svg";
 import faceBook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
-import tiktok from "../images/tiktok.svg";
+import tikTok from "../images/tikTok.svg";
 import arrow from "../images/arrow-up.svg";
 import { NavLink } from "react-router-dom";
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <img src={tiktok} alt="tiktok" className="w-10 h-10" />
+                  <img src={tikTok} alt="tiktok" className="w-10 h-10" />
                 </li>
               </ul>
             </div>
