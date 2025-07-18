@@ -1,5 +1,6 @@
+import AboutWrapper from "../../Components/AboutWrapper";
 import ArrowColumn from "../../Components/ArrowColumn";
-// import BodyGoal from "./BodyGoal";
+import BodyGoal from "./BodyGoal";
 import women from "../../images/women.png";
 
 export default function Home() {
@@ -18,8 +19,11 @@ export default function Home() {
           <img src={women} alt="Women image" className="w-[399px] h-[543px]"/>
         </div>
       </div>
+      <BodyGoal />
+      <div className="bg-primary h-[571px] w-full">
+      <AboutWrapper showButton={true} />
+      </div>
       {/* <Banner /> */}
-      {/* <BodyGoal /> */}
     </>
   );
 }

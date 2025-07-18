@@ -1,7 +1,13 @@
+import AboutWrapper from "../../Components/AboutWrapper";
+import Consultation from "../../Components/Consultation";
+
 export default function Lenka() {
   return (
     <>
-      <h1>This is Lenka</h1>
+      <AboutWrapper showArrow={true} />
+      <div className="h-96"></div>
+      <div className="h-96"></div>
+      <div className="h-96"></div>
       <div className="m-20">
         <Consultation />
       </div>

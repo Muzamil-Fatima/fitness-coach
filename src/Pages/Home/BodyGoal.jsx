@@ -7,8 +7,8 @@ import arrowUp from "../../images/arrow-up.svg";
 export default function BodyGoal() {
   return (
     <div className="grid grid-cols-2 font-secondary font-normal text-xl  mt-20 pr-6">
-      <div className="">
-        <img src={women2} alt="women" className="" />
+      <div>
+        <img src={women2} alt="women"/>
       </div>
       <div className="relative flex flex-col justify-center pr-8 pl-12 flex-wrap">
         <img
