@@ -2,6 +2,7 @@ import facebook from "../../images/facebook.svg";
 import tikTok from "../../images/tikTok.svg";
 import arrowRight from "../../images/arrow-right.png";
 import instagram from "../../images/instagram.svg";
+
 export default function Question() {
   return (
     <div className="font-secondary mt-10 mb-10">

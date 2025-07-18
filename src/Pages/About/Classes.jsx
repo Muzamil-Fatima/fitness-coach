@@ -11,7 +11,7 @@ export default function Classes() {
     <>
       <div className="text-[var(--color-white)] font-primary">
         <div>
-          <h2 className="text-6xl">
+          <h2 className="text-6xl mt-16">
             Training{" "}
             <span className="text-[var(--color-primary)]">Classes</span>
           </h2>

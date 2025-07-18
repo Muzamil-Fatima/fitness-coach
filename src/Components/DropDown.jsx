@@ -42,11 +42,11 @@ export default function DropDown() {
           />
         </div>
         {isOpen1 && (
-          <div>
+          <div className="mt-3 rounded-2xl">
             {options.map((option, index) => {
               return (
                 <div
-                  className="dropdown bg-[var(--color-darker)] w-[390px] px-4 py-3 hover:border-[var(--color-primary)] hover:border-2  border-dashed cursor-pointer"
+                  className=" dropdown bg-[var(--color-darker)] w-[370px] px-4 py-3 hover:border-[var(--color-primary)] hover:border-2  border-dashed hover:rounded-2xl cursor-pointer"
                   key={index}
                   onClick={() => {
                     setSelected(option);
@@ -73,11 +73,11 @@ export default function DropDown() {
           />
         </div>
         {isOpen2 && (
-          <div>
+          <div className="mt-3 rounded-2xl">
             {times.map((time, index) => {
               return (
                 <div
-                  className="dropdown bg-[var(--color-darker)] w-[223px] px-4 py-3 hover:border-[var(--color-primary)] hover:border-2  border-dashed cursor-pointer"
+                  className="dropdown bg-[var(--color-darker)] w-[223px] px-4 py-3 hover:border-[var(--color-primary)] hover:border-2  border-dashed hover:border-rounded-2xl cursor-pointer"
                   key={index}
                   onClick={() => {
                     setIsTime(time);

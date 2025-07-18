@@ -44,9 +44,9 @@ export default function SessionCard() {
     },
   ];
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full m-auto overflow-x-hidden font-secondary">
       {sessions.map((session) => (
-        <div key={session.id} className="w-full max-w-[1512px] min-h-[300px] sm:min-h-[400px] md:min-h-[529px] border-b-2 border-dashed border-[var(--color-primary)] m-auto px-4 hover:bg-[var(--color-darker)] justify-center items-center">
+        <div key={session.id} className="w-full m-auto max-w-[1512px] min-h-[300px] sm:min-h-[400px] md:min-h-[529px] border-b-2 border-dashed border-[var(--color-primary)] px-4 hover:bg-[var(--color-darker)] justify-center items-center">
           <div className="flex w-full max-w-[1179px] items-center justify-center
 ">
             {/* Left Section */}

@@ -4,7 +4,7 @@ export default function Consultation() {
     <div className="h-[380px] w-[82vw] mx-auto bg-[var(--color-primary)] flex items-center justify-center p-10 rounded-2xl  overflow-hidden font-secondary">
       <div className="w-full h-full border-2 border-black border-dashed rounded-2xl grid grid-cols-3">
         <div className="p-6 col-span-2">
-          <p className=" text-[52px] space-[-2] font-semibold ">Get a free Consultation</p>
+          <p className=" text-[52px] space-[-2] font-semibold block whitespace-nowrap ">Get a free Consultation</p>
           <p className=" text-base mb-6 ">
             Lorem Ipsum'is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

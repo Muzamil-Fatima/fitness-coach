@@ -45,7 +45,7 @@ export default function Footer() {
                 <img src={arrow} alt="arrow-icon"  />
               </div>
               <input 
-              className="bg-transparent border-b border-white text-white placeholder-white outline-none"
+              className="w-3/5 mt-2 bg-transparent border-b border-white text-white placeholder-white outline-none"
               type="email" required  />
             </div>
           </div>
