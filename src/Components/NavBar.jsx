@@ -1,5 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
+import Logo from "../images/Logo.svg";
+import cart from "../images/cart.svg";
+import user from "../images/user.svg"
+
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +24,7 @@ export default function NavBar() {
       <div className="flex items-center justify-between px-8 py-6 h-full font-[Hanson] ">
         <div className="flex-1">
           <NavLink to="/">
-            <img src="/src/images/Logo.svg" alt="Logo" className="w-64 h-8" />
+            <img src={Logo} alt="Logo" className="w-64 h-8" />
           </NavLink>
         </div>
         <div className="flex space-x-8 ">
@@ -74,8 +78,8 @@ export default function NavBar() {
             </li>
           </ul>
           <div className="flex-1 flex justify-end space-x-4">
-            <img src="/src/images/cart.svg" alt="cart" className="h-8 w-8" />
-            <img src="/src/images/user.svg" alt="user" className="h-8 w-8" />
+            <img src={cart} alt="cart" className="h-8 w-8" />
+            <img src={user} alt="user" className="h-8 w-8" />
           </div>
         </div>
       </div>
