@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import image from "../images/sort-down.png";
+import image from "../../images/sort-down.png";
 
 export default function DropDown() {
   const [isOpen1, setIsOpen1] = useState(false);

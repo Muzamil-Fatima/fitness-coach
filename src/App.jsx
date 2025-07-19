@@ -2,7 +2,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
-import Services from "./Pages/Services/Services";
 import SessionCard from "./Pages/About/SessionCard";
 import Classes from "./Pages/About/Classes";
 import Lenka from "./Pages/About/Lenka";
@@ -11,6 +10,7 @@ import Functional from "./Pages/About/Functional";
 import OnlineTraining from "./Pages/About/OnlineTraining";
 import StrengthPower from "./Pages/About/StrengthPower";
 import WeightLoss from "./Pages/About/WeightLoss";
+import MyServices from "./Pages/Services/MyServices";
 
 function App() {
   return (
@@ -28,8 +28,7 @@ function App() {
               <Route path="training-classes/weight-loss-training" element={<WeightLoss />} />
             <Route path="lenka" element={<Lenka />} />
           </Route>
-
-          <Route path="services" element={<Services />} />
+          <Route path="services" element={<MyServices />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

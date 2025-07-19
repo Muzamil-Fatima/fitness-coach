@@ -2,9 +2,7 @@ import ArrowRow from "../../Components/ArrowRow";
 export default function ServicesWrapper({
   title1,
   title2,
-  para1,
-  para2,
-  para3,
+  description,
   image,
 }) {
   return (
@@ -20,9 +18,7 @@ export default function ServicesWrapper({
       </div>
       <div>
         <div>
-          <p>{para1}</p>
-          <p>{para2}</p>
-          <p>{para3}</p>
+          <p>{description}</p>
         </div>
         <div>
           <img src={image} alt="women" className="w-[555px] h-[397px] m-4" />

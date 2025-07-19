@@ -1,5 +1,5 @@
 import ArrowRow from "../../Components/ArrowRow";
-import women4 from "../../images/women4.png";
+import women4 from "../../../images/women4.png";
 
 export default function Question() {
   return (

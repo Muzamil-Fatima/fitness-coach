@@ -1,8 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import Logo from "../images/Logo.svg";
-import cart from "../images/cart.svg";
-import user from "../images/user.svg"
+import Logo from "../../images/Logo.svg";
+import cart from "../../images/cart.svg";
+import user from "../../images/user.svg"
 
 
 export default function NavBar() {

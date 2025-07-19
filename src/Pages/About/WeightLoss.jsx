@@ -1,6 +1,6 @@
 import PageWrapper from "./PageWrapper";
-import women10 from "../../images/women10.png";
-import women7 from "../../images/women7.png";
+// import women10 from "../images/women10.png";
+// import women7 from "../images/women7.png";
 
 export default function WeightLoss() {
   return (
@@ -18,8 +18,8 @@ export default function WeightLoss() {
         para4="Lorem Ipsum has been the industry's standard dummy text ever since
                   the 1500s. Lorem Ipsum has been the industry's standard dummy text
                   ever since the 1500s, when an unknown printer."
-        image1={women10}
-        image2={women7}
+        // image1={women10}
+        // image2={women7}
       />
     </>
   );

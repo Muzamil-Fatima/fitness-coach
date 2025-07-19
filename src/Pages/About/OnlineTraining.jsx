@@ -1,5 +1,5 @@
-import women13 from "../../images/women13.png";
-import male from "../../images/male.png";
+import women13 from "../../../images/women13.png";
+import male from "../../../images/male.png";
 import PageWrapper from "./PageWrapper";
 
 export default function OnlineTraining() {

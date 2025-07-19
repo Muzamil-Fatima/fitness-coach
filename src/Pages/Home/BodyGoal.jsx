@@ -1,9 +1,9 @@
-import women2 from "../../images/women2.png";
-import subtracts from "../../images/subtracts.svg";
-import click from "../../images/click.svg";
-import tick from "../../images/tick.svg";
-import subtract from "../../images/subtract.svg";
-import arrowUp from "../../images/arrow-up.svg";
+import women2 from "../../../images/women2.png";
+import subtracts from "../../../images/subtracts.svg";
+import click from "../../../images/click.svg";
+import tick from "../../../images/tick.svg";
+import subtract from "../../../images/subtract.svg";
+import arrowUp from "../../../images/arrow-up.svg";
 export default function BodyGoal() {
   return (
     <div className="grid grid-cols-2 font-secondary font-normal text-xl  mt-20 pr-6">

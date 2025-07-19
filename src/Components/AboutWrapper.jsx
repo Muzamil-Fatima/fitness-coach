@@ -1,7 +1,7 @@
-import sortUp from "../images/sort-up.png";
-import click from "../images/click.svg";
-import ticks from "../images/tickw.svg";
-import women3 from "../images/women3.jpg";
+import sortUp from "../../images/sort-up.png";
+import click from "../../images/click.svg";
+import ticks from "../../images/tickw.svg";
+import women3 from "../../images/women3.jpg";
 import ArrowRow from "../Components/ArrowRow";
 
 export default function AboutWrapper({

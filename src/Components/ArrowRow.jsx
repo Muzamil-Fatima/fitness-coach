@@ -1,4 +1,4 @@
-import arrowDown from "../images/arrowColorDown.svg";
+import arrowDown from "../../images/arrowColorDown.svg";
 export default function ArrowRow() {
   return (
     <div className="my-2 mx-0">

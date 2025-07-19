@@ -1,7 +1,8 @@
 import AboutWrapper from "../../Components/AboutWrapper";
 import ArrowColumn from "../../Components/ArrowColumn";
 import BodyGoal from "./BodyGoal";
-import women from "../../images/women.png";
+import women from "../../../images/women.png";
+import Services from "./Services";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       <BodyGoal />
       <div className="bg-primary h-[571px] w-full">
       <AboutWrapper showButton={true} />
+      </div>
+      <div>
+        <Services />
       </div>
       {/* <Banner /> */}
     </>

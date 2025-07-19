@@ -1,8 +1,8 @@
 import ArrowRow from "../../Components/ArrowRow";
-import women6 from "../../images/women6.png";
-import women7 from "../../images/women7.png";
-import women9 from "../../images/women9.png";
-import women8 from "../../images/women8.png";
+import women6 from "../../../images/women6.png";
+import women7 from "../../../images/women7.png";
+import women9 from "../../../images/women9.png";
+import women8 from "../../../images/women8.png";
 import Consultation from "../../Components/Consultation";
 import { Outlet, NavLink } from "react-router-dom";
 

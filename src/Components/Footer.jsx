@@ -1,8 +1,8 @@
-import Logo from "../images/Logo.svg";
-import faceBook from "../images/facebook.svg";
-import instagram from "../images/instagram.svg";
-import tikTok from "../images/tikTok.svg";
-import arrow from "../images/arrow-up.svg";
+import Logo from "../../images/Logo.svg";
+import faceBook from "../../images/facebook.svg";
+import instagram from "../../images/instagram.svg";
+import tikTok from "../../images/tikTok.svg";
+import arrow from "../../images/arrow-up.svg";
 import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (

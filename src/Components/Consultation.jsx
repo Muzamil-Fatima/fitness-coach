@@ -1,4 +1,4 @@
-import women5 from "../images/women5.png";
+import women5 from "../../images/women5.png";
 export default function Consultation() {
   return (
     <div className="h-[380px] w-[82vw] mx-auto bg-[var(--color-primary)] flex items-center justify-center p-10 rounded-2xl  overflow-hidden font-secondary">

@@ -1,6 +1,6 @@
 import PageWrapper from "./PageWrapper";
-import women8 from "../../images/women8.png";
-import women12 from "../../images/women12.png";
+import women8 from "../../../images/women8.png";
+import women12 from "../../../images/women12.png";
 export default function Functional() {
   return (
     <>

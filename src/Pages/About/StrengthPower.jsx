@@ -1,6 +1,6 @@
 import PageWrapper from "./PageWrapper";
-import women6 from "../../images/women6.png";
-import women11 from "../../images/women11.png";
+import women6 from "../../../images/women6.png";
+import women11 from "../../../images/women11.png";
 export default function StrengthPower() {
   return (
     <>
