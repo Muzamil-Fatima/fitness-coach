@@ -5,7 +5,7 @@ export default function BookNow({ session }) {
   return (
     <>
       <button
-      className="bg-[var(--color-primary)] w-56 h-[61px] text-white font-bold rounded-[50px] hover:bg-[var(--color-primary)] transition duration-300"
+      className="mt-6 font-secondary bg-[var(--color-primary)] w-56 h-[61px] text-white font-medium rounded-[50px] hover:bg-[var(--color-primary)] transition duration-300"
       onClick={handleBook}>Book Session</button>
     </>
   );

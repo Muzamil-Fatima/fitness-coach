@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       <BodyGoal />
       <div className="bg-primary h-[571px] w-full">
-      <AboutWrapper showButton={true} />
+      <AboutWrapper bgColor={true} showButton={true} />
       </div>
       <div>
         <Services />

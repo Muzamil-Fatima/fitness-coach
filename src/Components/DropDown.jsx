@@ -4,7 +4,7 @@ import image from "../../images/sort-down.png";
 export default function DropDown() {
   const [isOpen1, setIsOpen1] = useState(false);
   const [selected, setSelected] = useState("Select any Option ");
- const options = [
+  const options = [
     "12 sessions - AED 2210",
     "8 sessions - AED 1520",
     "1 session - AED 250",
@@ -12,7 +12,7 @@ export default function DropDown() {
   ];
 
   const [isOpen2, setIsOpen2] = useState(false);
-  const [isTime, setIsTime] = useState("Select any Option ");
+  const [isTime, setIsTime] = useState("Select Time");
   const times = ["7AM - 9AM", "9AM - 12PM", "12PM - 4PM"];
 
   useEffect(() => {
