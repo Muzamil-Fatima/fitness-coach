@@ -1,5 +1,6 @@
 import ArrowRow from "../../Components/ArrowRow";
 import ArrowColumn from "../../Components/ArrowColumn";
+import Consultation from "../../Components/Consultation";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -24,30 +25,32 @@ export default function MyServices() {
   const leftColumn = services.slice(0, mid);
   const rightColumn = services.slice(mid);
   return (
-    <>
+    <div className="w-11/12 m-auto ">
       <div>
         <h5 className="font-[Hanson] font-bold text-[64px] mt-12 mb-0">
           My <span className="mt-0 text-[var(--color-primary)]">Services</span>
         </h5>
         <ArrowRow />
       </div>
-      <div className="grid grid-cols-8 mt-3">
+      <div className="grid grid-cols-8 mt-3 font-secondary">
         <div className="col-span-3">
           {leftColumn.map((service) => (
             <div
               key={service.id}
-              className="flex font-normal text-[32px] mt-8 mb-8"
+              className="flex font-normal text-[32px] mt-8 mb-8 justify-center items-center"
             >
-              <span className="h-[130px] w-[130px] rounded-[50%] bg-[var(--color-black)]">
+              <div className="w-1/3">
                 <img
                   src={service.image}
                   alt="icon"
-                  className="w-[155px] h-[108px]"
+                  className="w-[136px] h-[136px] rounded-[50%]"
                 />
-              </span>
-              <NavLink to={`/services/${services.id}`}>
-                <h3 className="ml-3">{service.title}</h3>
-              </NavLink>
+              </div>
+              <div className="w-2/3">
+                <NavLink to={`/services/${service.id}`}>
+                  <h3 className="ml-3 text-[32px]">{service.title}</h3>
+                </NavLink>
+              </div>
             </div>
           ))}
         </div>
@@ -58,29 +61,31 @@ export default function MyServices() {
           {rightColumn.map((service) => (
             <div
               key={service.id}
-              className="flex font-normal text-[32px] mt-8 mb-8"
+              className="flex font-normal text-[32px] mt-8 mb-8 justify-center items-center"
             >
-              <span className="h-[130px] w-[130px] rounded-[50%] bg-[var(--color-black)]">
+              <div className="w-1/3">
                 <img
                   src={service.image}
                   alt="icon"
-                  className="w-[155px] h-[108px]"
+                  className="w-[136px] h-[136px] rounded-[50%]"
                 />
-              </span>
-              <NavLink to={`/services/${services.id}`}>
-                <h3 className="ml-3">{service.title}</h3>
-              </NavLink>
+              </div>
+              <div className="w-2/3">
+                <NavLink to={`/services/${service.id}`}>
+                  <h3 className="ml-3 text-[32px]">{service.title}</h3>
+                </NavLink>
+              </div>
             </div>
           ))}
         </div>
       </div>
-      <hr className="opacity-25" />
+      <hr className="opacity-25 mt-40" />
       <div className="h-64"></div>
       <div className="h-64"></div>
       <div className="h-64"></div>
       <div className="m-20">
         <Consultation />
       </div>
-    </>
+    </div>
   );
 }

@@ -6,8 +6,8 @@ import Services from "./Services";
 
 export default function Home() {
   return (
-    <>
-      <div className="grid grid-cols-3 mt-16">
+    <div className="w-11/12 m-auto">
+      <div className="grid grid-cols-3 mt-16 ">
         <div className="font-primary uppercase font-bold text-[89px] col-span-2">
           <h1 className="">
             <span className="block">UNLEASH</span>
@@ -28,6 +28,6 @@ export default function Home() {
         <Services />
       </div>
       {/* <Banner /> */}
-    </>
+    </div>
   );
 }

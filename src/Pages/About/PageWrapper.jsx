@@ -14,7 +14,7 @@ export default function PageWrapper({
   image2,
 }) {
   return (
-    <>
+    <div className="w-11/12 m-auto ">
       <div>
         <h3 className="font-primary font-bold text-[64px] mt-12 mb-0">
           <span className="block">{title1}</span>
@@ -59,6 +59,6 @@ export default function PageWrapper({
       <div className="m-20">
         <Consultation />
       </div>
-    </>
+    </div>
   );
 }

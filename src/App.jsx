@@ -11,12 +11,14 @@ import OnlineTraining from "./Pages/About/OnlineTraining";
 import StrengthPower from "./Pages/About/StrengthPower";
 import WeightLoss from "./Pages/About/WeightLoss";
 import MyServices from "./Pages/Services/MyServices";
+import ServicesDetails from "./Pages/Services/ServicesDetails";
 
 function App() {
   return (
     <div className="bg-[var(--color-dark)] text-[var(--color-white)] min-h-screen w-full font-primary m-0 p-0">
+      <NavBar />
       <Routes>
-        <Route path="/" element={<NavBar />}>
+        {/* <Route path="/" element={<NavBar />}> */}
           <Route index element={<Home />} />
 
           <Route path="about">
@@ -29,8 +31,9 @@ function App() {
             <Route path="lenka" element={<Lenka />} />
           </Route>
           <Route path="services" element={<MyServices />} />
+          <Route path="services/:id" element={<ServicesDetails />} />
           <Route path="contact" element={<Contact />} />
-        </Route>
+        {/* </Route> */}
       </Routes>
       <Footer />
     </div>

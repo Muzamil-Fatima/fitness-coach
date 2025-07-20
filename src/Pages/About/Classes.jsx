@@ -8,7 +8,7 @@ import { Outlet, NavLink } from "react-router-dom";
 
 export default function Classes() {
   return (
-    <>
+    <div className="w-11/12 m-auto ">
       <div className="text-[var(--color-white)] font-primary">
         <div>
           <h2 className="text-6xl mt-16">
@@ -63,6 +63,6 @@ export default function Classes() {
       <div className="m-20">
         <Consultation />
       </div>
-    </>
+    </div>
   );
 }

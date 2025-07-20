@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <>
+    <div className="w-11/12 m-auto ">
       <Question />
       <hr />
       <div className="grid grid-cols-5" >
@@ -20,6 +20,6 @@ export default function Contact() {
       <div className="m-20">
         <Consultation />
       </div>
-    </>
+    </div>
   );
 }
